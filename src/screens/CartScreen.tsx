@@ -36,15 +36,6 @@ const CartScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     }, [dispatch])
   );
 
-  // useEffect(() => {
-  //   //FAIL TO CALL ERROR CASE
-  //   // dispatch({ type: 'FETCH_INVENTORY_FAILURE', error: 'Mock error occurred' });
-
-  //   // TO SUCCESS
-  //   dispatch({ type: 'FETCH_PRODUCTS_REQUEST' });
-  // }, [dispatch]);
-
-
       useEffect(() => {
         setRefreshing(loading);
         setProducts(inventory);
